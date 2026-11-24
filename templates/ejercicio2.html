@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="contenedor">
+
+    <h1>Nombre Más Largo</h1>
+
+    <form method="POST">
+
+        <input type="text" name="nombre1" placeholder="Nombre 1" required>
+
+        <input type="text" name="nombre2" placeholder="Nombre 2" required>
+
+        <input type="text" name="nombre3" placeholder="Nombre 3" required>
+
+        <button type="submit">Evaluar</button>
+
+    </form>
+
+    <h2>{{ resultado }}</h2>
+
+    <a href="/">Volver al menú</a>
+
+</div>
+
+</body>
+</html>

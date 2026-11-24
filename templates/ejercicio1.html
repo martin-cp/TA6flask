@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="contenedor">
+    <h1>Promedio de Notas</h1>
+
+    <form method="POST">
+
+        <input type="number" name="nota1" placeholder="Nota 1" required>
+
+        <input type="number" name="nota2" placeholder="Nota 2" required>
+
+        <input type="number" name="nota3" placeholder="Nota 3" required>
+
+        <input type="number" name="asistencia" placeholder="Asistencia %" required>
+
+        <button type="submit">Calcular</button>
+
+    </form>
+
+    <h2>{{ resultado }}</h2>
+
+    <a href="/">Volver al menú</a>
+
+</div>
+
+</body>
+</html>
